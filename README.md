@@ -87,7 +87,7 @@ The code runs locally with minimal setup and can easily be adapted for testing o
 
 Install dependencies:
 ```bash
-Pip instead-r requirements
+pip install -r requirements.txt
 ```
 Create a .env file with your Google API key:
 ```
