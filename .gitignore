@@ -1,0 +1,12 @@
+pycache/
+*.pyc
+
+
+.DS_Store
+.vscode/
+
+
+.env
+.streamlit/secrets.toml
+
+Streamlit cache
