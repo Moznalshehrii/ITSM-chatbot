@@ -13,7 +13,7 @@ API_KEY = os.getenv("GOOGLE_API_KEY")
 client = genai.Client(api_key=API_KEY)
 
 # Models and constants
-GENERATION_MODEL = "gemini-1.5-flash"
+GENERATION_MODEL = "gemini-2.5-flash"
 EMBEDDING_MODEL = "text-embedding-004"
 TOP_K = 5
 THRESHOLD = 0.50
