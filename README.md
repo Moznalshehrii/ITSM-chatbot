@@ -83,7 +83,13 @@ The code runs locally with minimal setup and can easily be adapted for testing o
 Install dependencies:
 ```bash
 pip install numpy pandas faiss-cpu python-dotenv google-genai
+```
+Create a .env file with your Google API key:
+```
 GOOGLE_API_KEY=your_key_here
+```
+Run the example:
+```
 from your_module import load_dataset, build_index, get_fix
 
 df = load_dataset("ServiceNow_KB_Dummy_Articles_150.xlsx")
@@ -92,7 +98,15 @@ index, _ = build_index(df)
 result = get_fix("My Outlook keeps crashing after update", df, index)
 print(result["title"])
 print(result["fix"])
+```
+Example output:
+```
 title: Reset Outlook After Update
-fix: Go to Control Panel > Programs > Repair Microsoft Office, then restart your device.
+fix: Go to Control Panel > Programs > Repair Microsoft Office, then restart your device. 
+```
+#🌱 The Goal
 
+This project isn’t about automation for its own sake.
+It’s about helping people solve problems faster — by understanding their language and connecting them with the right knowledge.
 
+It shows how even a small, focused AI tool can reduce repetitive work and make IT self-service more human.
