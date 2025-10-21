@@ -13,8 +13,8 @@ The **Smart IT Helpdesk Retriever** understands what a user means when describin
 
 It:
 1. Reads the user’s issue written in plain language.  
-2. Uses **Gemini AI** to generate a short, clear title.  
-3. Searches the stored articles using **FAISS** similarity search.  
+2. Uses an **LLM** to generate a short, clear title that summarizes the issue.
+3. Applies a **RAG (Retrieval-Augmented Generation)** approach that compares meaning using cosine similarity to retrieve the most relevant knowledge base articles. 
 4. Returns the most relevant fix — or a helpful fallback if no match is strong enough.  
 
 It’s a **proof of concept** that demonstrates a smarter way to access IT knowledge.
@@ -58,10 +58,15 @@ It’s only used to **prove the concept** and validate how Gemini and FAISS work
 
 ## ⚙️ How It Works (Simplified)
 
-1. 🗣 **Input**: The user writes a problem (e.g., “My VPN keeps disconnecting”).  
-2. ✍️ **Gemini AI**: Summarizes it into a short title (“Reset VPN Connection on Windows 11”).  
-3. 🔎 **FAISS Search**: Finds the most similar record from the knowledge base.  
-4. 💬 **Output**: Returns the fix text with a similarity score.  
+1. 🗣 **Input**: The user describes an IT issue in plain language  
+   *(for example: “My VPN keeps disconnecting.”)*  
+
+2. ✍️ **LLM Processing**: The system uses a language model to generate a short, clear title that captures the main intent  
+   *(e.g., “Reset VPN Connection on Windows 11”)*  
+
+3. 🔎 **RAG Retrieval**: The title is embedded and compared to existing knowledge base entries using **cosine similarity** to find the most semantically related results.  
+
+4. 💬 **Output**: The system returns the best-matched fix, along with a confidence score or a fallback message if no strong match is found.  
 
 ---
 
