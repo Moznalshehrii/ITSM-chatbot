@@ -104,7 +104,8 @@ Example output:
 title: Reset Outlook After Update
 fix: Go to Control Panel > Programs > Repair Microsoft Office, then restart your device. 
 ```
-#🌱 The Goal
+---
+## 🌱 The Goal
 
 This project isn’t about automation for its own sake.
 It’s about helping people solve problems faster — by understanding their language and connecting them with the right knowledge.
