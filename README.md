@@ -87,7 +87,7 @@ The code runs locally with minimal setup and can easily be adapted for testing o
 
 Install dependencies:
 ```bash
-pip install numpy pandas faiss-cpu python-dotenv google-genai
+Pip instead-r requirements
 ```
 Create a .env file with your Google API key:
 ```
