@@ -3,7 +3,7 @@ import streamlit as st
 from RAG import load_dataset, build_index, get_fix
 
 # ── Page + styles ───────────────────────────────────────────────────────────────
-st.set_page_config(page_title="IT Incident Assistant", page_icon="🛠️", layout="wide")
+st.set_page_config(page_title="ITSM Assistant", page_icon="🛠️", layout="wide")
 
 st.markdown("""
 <style>
