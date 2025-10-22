@@ -101,7 +101,7 @@ with st.sidebar:
 
 # ── Chat area ───────────────────────────────────────────────────────────────────
 st.markdown('<div class="chat-wrap">', unsafe_allow_html=True)
-st.title("IT Incident Assistant")
+st.title("ITSM Assistant")
 
 messages = st.session_state.chats[st.session_state.active]
 
@@ -114,7 +114,7 @@ for m in messages:
         st.markdown(f"<div class='assistant-bubble'>{m['fix']}</div>", unsafe_allow_html=True)
 
 # Chat input
-text = st.chat_input("Describe your IT incident…")
+text = st.chat_input("Type your incident…")
 
 # On submit
 if text:
